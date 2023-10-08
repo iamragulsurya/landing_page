@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main flex flex-col gap-10 ">
+        <div class="nav flex justify-between py-6 px-12">
+            <div class="left flex gap-4">
+                <img class="w-5 h-5 mt-1" src="https://i.insider.com/56e71048dd0895ed158b4683?width=1000&format=jpeg&auto=webp" alt="">
+                <h1>hi@john.design</h1>
+            </div>
+            <div class="right flex gap-6 px-4">
+                <h1>Works</h1>
+                <h1>Resources</h1>
+                <h1>Services</h1>
+                <h1>Contact</h1>
+                <img class="w-5 h-5 mt-[0.5px] rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmxpv-4FR2EDjLUSQqs9e64FD62PAmCMcG8dP4vmFLaIWBJMO1Sfl8fueVmFoIXVVmbys&usqp=CAU"  id="dark" alt="">
+            </div>
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <div class="content flex flex-col justify-center gap-5 items-center">
+                <div class="pofile flex flex-col items-center gap-2">
+                    <img class="rounded-full w-[100px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjn6Cx9lVK0qVCuvdV7oLo429YCTjjXsJ1wOKxshkvuzaeJmstPMxebpaAZA_-Ja6osHw&usqp=CAU" alt="">
+                    <p>Hi, I'm Gojo</p>
+                </div>
+                <div class="heading flex flex-col">
+                    <h1 class="text-3xl font-bold">Building digital</h1>
+                    <h1 class="text-3xl font-bold">products, brands and</h1>
+                    <h1 class="text-3xl font-bold">experience.</h1>
+                </div>
+                <div class="flex flex-col">
+                    <p class="text-center">a <b>Product Designer</b> and <b>Visual Developer</b> in SF.</p>
+                    <p class="text-center">I specialize in UI/UX Desigh, Responsive Web Design</p>
+                    <p class="text-center">and Visual Development</p>
+                </div>
+                <button class="bg-black text-white max-w-fit px-7 py-2 rounded-full">CONNECT WITH ME</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let imgEl = document.querySelector('#dark');
+        console.log(imgEl);
+        let flag = true;
+        imgEl.addEventListener('click', ()=>{
+            if(flag)
+            {
+                document.querySelector('body').style.backgroundColor = 'black';
+                document.querySelector('body').style.color = 'white';
+                flag=false;
+            }
+            else {
+                document.querySelector('body').style.backgroundColor = 'white';
+                document.querySelector('body').style.color = 'black';
+                flag=true;
+            }
+        })
+    </script>
+</body>
+</html>
